@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clinic Gallery | Teeth And Smile Dental Clinic &amp; Implant Centre Gurugram</title>
+<meta name="description" content="Explore our modern dental clinic in Sector 57, Gurugram. View our treatment rooms, equipment, hygiene standards, and before &amp; after patient results."/>
+<meta name="keywords" content="dental clinic gallery Gurugram, before after dental Gurgaon, dental clinic photos Sector 57, teeth whitening results Gurugram"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary":"#006565","primary-container":"#008080","on-primary":"#ffffff","on-primary-container":"#e3fffe","primary-fixed":"#93f2f2","secondary":"#006493","secondary-container":"#77c6ff","secondary-fixed":"#cae6ff","secondary-fixed-dim":"#8dcdff","on-secondary":"#ffffff","on-secondary-container":"#005279","surface":"#f7f9fb","surface-container-lowest":"#ffffff","surface-container-low":"#f2f4f6","surface-container":"#eceef0","surface-container-high":"#e6e8ea","surface-container-highest":"#e0e3e5","on-surface":"#191c1e","on-surface-variant":"#3e4949","outline-variant":"#bdc9c8","background":"#f7f9fb"},borderRadius:{"DEFAULT":"1rem","sm":"0.5rem","lg":"2rem","xl":"3rem","full":"9999px"},fontFamily:{"headline":["Manrope"],"body":["Public Sans"]}}}}
+</script>
+<style>
+  body{font-family:'Public Sans',sans-serif;}
+  h1,h2,h3,h4{font-family:'Manrope',sans-serif;}
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;}
+  .icon-filled{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;}
+  .whatsapp-float{position:fixed;bottom:6rem;right:1.25rem;z-index:999;transition:transform 0.2s ease;}
+  .whatsapp-float:hover{transform:scale(1.1);}
+  @media(min-width:768px){.whatsapp-float{bottom:2rem;}}
+  .mobile-menu{max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+  .mobile-menu.open{max-height:500px;}
+
+  /* Gallery grid item hover */
+  .gallery-item{position:relative;overflow:hidden;cursor:pointer;}
+  .gallery-item img{transition:transform 0.4s ease;}
+  .gallery-item:hover img{transform:scale(1.06);}
+  .gallery-item .overlay{position:absolute;inset:0;background:rgba(0,101,101,0);display:flex;align-items:center;justify-content:center;transition:background 0.3s ease;}
+  .gallery-item:hover .overlay{background:rgba(0,101,101,0.55);}
+  .gallery-item .overlay-icon{opacity:0;transform:scale(0.8);transition:opacity 0.3s ease,transform 0.3s ease;color:#ffffff;}
+  .gallery-item:hover .overlay-icon{opacity:1;transform:scale(1);}
+
+  /* Lightbox */
+  #lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;padding:1rem;}
+  #lightbox.active{display:flex;}
+  #lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:1rem;}
+  #lightbox-close{position:absolute;top:1.25rem;right:1.25rem;color:white;cursor:pointer;font-size:2rem;line-height:1;background:rgba(255,255,255,0.15);border-radius:50%;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;}
+  #lightbox-prev,#lightbox-next{position:absolute;top:50%;transform:translateY(-50%);color:white;cursor:pointer;background:rgba(255,255,255,0.15);border-radius:50%;width:2.75rem;height:2.75rem;display:flex;align-items:center;justify-content:center;transition:background 0.2s;}
+  #lightbox-prev:hover,#lightbox-next:hover{background:rgba(255,255,255,0.3);}
+  #lightbox-prev{left:1rem;}
+  #lightbox-next{right:1rem;}
+  #lightbox-caption{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);color:white;font-size:0.875rem;opacity:0.75;text-align:center;max-width:80%;}
+</style>
+</head>
+<body class="bg-surface text-on-surface">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+  <div class="flex justify-between items-center px-6 md:px-8 h-20 max-w-7xl mx-auto">
+    <a href="index.html" class="flex flex-col leading-tight">
+      <span class="text-lg font-extrabold tracking-tight text-teal-900" style="font-family:Manrope,sans-serif">Teeth And Smile</span>
+      <span class="text-xs font-medium text-teal-700">Dental Clinic &amp; Implant Centre</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-slate-600 hover:text-teal-700 font-semibold text-sm transition-colors">Home</a>
+      <a href="about.html" class="text-slate-600 hover:text-teal-700 font-semibold text-sm transition-colors">About Us</a>
+      <a href="services.html" class="text-slate-600 hover:text-teal-700 font-semibold text-sm transition-colors">Services</a>
+      <a href="gallery.html" class="text-primary border-b-2 border-primary pb-0.5 font-semibold text-sm">Gallery</a>
+      <a href="contact.html" class="text-slate-600 hover:text-teal-700 font-semibold text-sm transition-colors">Contact</a>
+    </div>
+    <a href="tel:+917015937576" class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-primary-container transition-colors">
+      <span class="material-symbols-outlined text-base">call</span> Call Now
+    </a>
+    <button onclick="toggleMenu()" class="md:hidden p-2 text-teal-900"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden bg-surface/95 backdrop-blur-md px-6 pb-4">
+    <div class="flex flex-col gap-4 pt-4">
+      <a href="index.html" class="text-on-surface font-semibold py-2">Home</a>
+      <a href="about.html" class="text-on-surface font-semibold py-2">About Us</a>
+      <a href="services.html" class="text-on-surface font-semibold py-2">Services</a>
+      <a href="gallery.html" class="text-primary font-semibold py-2">Gallery</a>
+      <a href="contact.html" class="text-on-surface font-semibold py-2">Contact</a>
+      <div class="flex gap-3 pt-2">
+        <a href="tel:+917015937576" class="flex-1 flex items-center justify-center gap-2 bg-primary text-on-primary py-3 rounded-full font-semibold text-sm"><span class="material-symbols-outlined text-sm">call</span>Call</a>
+        <a href="https://wa.me/917015937576" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white py-3 rounded-full font-semibold text-sm">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="px-6 md:px-8 py-16 md:py-20 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto text-center">
+    <span class="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Our Clinic &amp; Results</span>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-5">Inside Teeth And Smile</h1>
+    <p class="text-on-surface-variant text-base leading-relaxed max-w-2xl mx-auto">Take a look at our modern clinic, state-of-the-art equipment, and the real smile transformations we've achieved for patients across Gurugram.</p>
+  </div>
+</section>
+
+<!-- FILTER TABS -->
+<div class="sticky top-20 z-40 bg-surface/90 backdrop-blur-md py-4 border-b border-outline-variant/20">
+  <div class="max-w-7xl mx-auto px-6 md:px-8 flex gap-3 overflow-x-auto">
+    <button onclick="filterGallery('all', this)" class="filter-btn active-filter flex-shrink-0 bg-primary text-on-primary px-5 py-2 rounded-full text-xs font-semibold transition-all">All Photos</button>
+    <button onclick="filterGallery('clinic', this)" class="filter-btn flex-shrink-0 bg-surface-container text-on-surface-variant px-5 py-2 rounded-full text-xs font-semibold hover:bg-primary hover:text-on-primary transition-all">Clinic &amp; Facility</button>
+    <button onclick="filterGallery('treatment', this)" class="filter-btn flex-shrink-0 bg-surface-container text-on-surface-variant px-5 py-2 rounded-full text-xs font-semibold hover:bg-primary hover:text-on-primary transition-all">Treatments</button>
+    <button onclick="filterGallery('results', this)" class="filter-btn flex-shrink-0 bg-surface-container text-on-surface-variant px-5 py-2 rounded-full text-xs font-semibold hover:bg-primary hover:text-on-primary transition-all">Before &amp; After</button>
+  </div>
+</div>
+
+<!-- MAIN GALLERY GRID -->
+<section class="py-12 px-6 md:px-8 max-w-7xl mx-auto">
+  <div id="gallery-grid" class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+
+    <!-- Clinic images -->
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="clinic" onclick="openLightbox(0)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuApGiOGqCSmuxsEYxgMOJKGRbBcHVNKf7C-Ec2H91tS6yADGx67eLAmPRMXM-xUgLWKemEL99hsPbu2vgeZTLh-qa4JLRTDfGBLn1Qg9rlXd6e61JPYBd7jqr1U_7TXtnaICT01F7YeETCYgRPfuZjImZwq9McHgJycqjS7Rl2zd6TLoRMq3mnpl7yHKioTEeSi5m6BLnwCc9pO_p2MEnTumUiNrSTSwS76lZBFPbixVe6i5O5WewMB76cFbKcu3n_K040iMgrNcP0"
+           alt="Dental clinic reception Gurugram" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="treatment" onclick="openLightbox(1)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCd3NCAKkwcZz7kx_spklmvUmsJcY0Yr_RIa0OpM1bXU9WdEZtHGEvFAArStiXjQQMXYba_ojlH6XTVqZmEGnPSMxngbGyEYG-073oVGLgSaUXdznmqliTjjuIgBhe9qKyrwy-4qhKGLQqaSv4kFU8bFLeMV_tv3gDJN3U-_Ht648Rqea9sOBNy9MWXukmAqXw0jcBjjIvJMlrpTmWdt0mzDOK87LGtqzRhyIhcUVkv7m2O_LCAZHOXNN22PGH69TzNbxbQwqU3y4"
+           alt="Dental treatment chair Gurugram clinic" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="treatment" onclick="openLightbox(2)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt7kgs6v8uzJ2h2-YBG7mB_2qyc266QCjR-xUw6NDfrPhNahnAiqDuoDZPYtYJr8oevxr5qGPVXooHvPjPTs3d6gEiV7JvNW7E_l14_kayl62Fma6RjDbODnH9OSjzRept6mGNqy7SAP-BNEc9Qhat2-qujvYO2qdDyXzI6BnUnZwaZfZlojrOltmrYaX16OXVl1k1mr148AGwM24zqSPhjWQFzT5QJgf2Qj4whQJ3kS0U_hzjvX3nO1AKOkFVbG6Zg9q6Yx0bOq0"
+           alt="Dentist at work Gurugram" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="results" onclick="openLightbox(3)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiIjlfgpZ2RLGNLqtQQAl79JH4ApVrKj2eDemnP2MGy6M0_LglTipWxO6UJuwvKpQFIM3WHBW_ymSmG-38NN9Arw66GKnl5EDz3v4I6oqM2eB_miQ48jxLn8wxL-VHBtUKFPFZ0w_RP_VWQhMhkS3_eBklAOXjaM3xJ2OEL9pNVozsFHISUaWPe5v2BQCj4wuNhDIhJ5L6iA7CcVOC8Azzt2_Bp3z3t2MVJBCvJpQbw9p-iXGeO3mHch7e3tLxJPnxILnxpso0AI0"
+           alt="Teeth whitening result bright smile" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="treatment" onclick="openLightbox(4)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpv06qb3tVTfNT2tFPg5S_YPpPdquljjsQoUO8kM3cv_QNrV6XvkXHFNQycEZCfF0Qnsp3x-uH5sR5FbRYjh8rj-j6Cm1VxrKrwYc7T9OyxxZoxo5_dR2dNtFnu6o2tmfc2hp_LonUE3ZSCnMvsp5fH0bSaDkJxFKHcSHxwkpAmnHRvuPmuzq71rW2GH3U_I4-cq-p9r5xzjSAoihMADVNozBpdGUu3WaH0VT72tJ5SYkkLL3-tIWfL4vbOiFCD0GXci1iw5tmJjc"
+           alt="Dental implant model Gurugram" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="clinic" onclick="openLightbox(5)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYPw9HXiqupDdQuUrTYI9DO1o6wuy--8Ma7gjFzzW3yYZvDBvmXNZvKDTbBiFucH-ikzFF_SylgNpdEuHS-no8Jmufakp2kMe9M4vwN441BG2tY1nPf_85cm1wjXNGeXu87SEgCX19I7n-E9ZVC6oDSB_iMIqThUgDmNz-_cDU_vh6uUOO0nTCKEMTSchsgK_P6Ce7Ji8gvXTFVSm3yT4mJExrJxOdCGnozVzATAxTsbCtgvTU-bLDlS3FN2PLrR2b1ZZxoB2xixw"
+           alt="Dental clinic interior modern design" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="treatment" onclick="openLightbox(6)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwzF3FXTow0aEpg6Jto2LhiQi9tzThWo9u98txWjJkXGLgxFk4l5FvTY3WdnZfvTY2bK4R9i6LM4luHF6t_exVpsKwjfQJEpG4e6UxlQK4xl678FPJ50im0gmMUV6fB5kCaBydL2mVnp-V2PFR83cfA90CuTU9p1vneizmPIPl23zztxugIbD7ixjjS1FXB4MdavnHiVllMNLQ6UWMY8YlO28N4xE6ucTaHFWo3cmeaDJLOZIzcNNs1xmVrjnxqAsSIW_S7gNIGMg"
+           alt="Root canal treatment Gurugram" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="results" onclick="openLightbox(7)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT2hm11ZVfII8O8b3BccVG40Eylf2TqemvevUG-_Jxb1coayjy1ecDIZGQJU8Xwiavq4ZWyXwfl5QLmkYfpdNO10DKGD4TC8Q8zx_8rrsgD8_ApDcRcr0X4GnFt7RZPuhv88m09bGF9qUNeaMjCcII6NJ7pgOAqUP4FLxkzQ3of13e0R9ngthQVWji9M7i-8TT0ZIvwladCbP4rp2hsPJJBDcQNmTOdMrA0HRC6VQ8iuvfGqvhi3Q2M7wXIp0jWb1KRiUseSUweFU"
+           alt="Smile makeover result Gurugram dental clinic" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="clinic" onclick="openLightbox(8)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQGSTq44lwceAID98KLxq75PL_p_4ax6lzybFP9MOKEXsb-Yh-pvz49wQhxiGTqFt10SZdSRQCPnBjpy7AxlraYZYeJGUBinH_fkFyKwQhU_0eSUzGeLz28Le_4tnRBhJmnlovya4aaz8bDrjVS_cFLBtegbAgflSZyl_0HP_CN8TkhizAsZKwtH3eaarR4E7sr6AFPQXyUm7HdKtzum8ymKkrMjNb_MJ-EqUSmStjUQcg1zR7vHSJhBvcazSB9oT04QMDKUjRuLI"
+           alt="Modern dental suite Gurugram Sector 57" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="results" onclick="openLightbox(9)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6qs-F1tRF0BXeHDL6lHQ4puD1zbNOfKudy3fX8ePiqU9oOJ2EYpnznL0eGRbCHSv4z58MnfYXc0vnGETroutCRlhHF5oGq68dRHS4FCEGHBdAAriaJWh-GCM6tMVg8JcXeVXFokwhVZCYRlo3oT_6_fHRhk0GacftyOp3J4TCxWKKMppDvcIIiF0m5PVszLKAeM70WvSJBb8u4"
+           alt="Clear aligner before after result" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="clinic" onclick="openLightbox(10)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_W7wwDX6g-5SuAdR6_HW1f0c-CN5nahUegfnnEmpS8QH1MJfM1mMicFsuOGHXWGbCoIgUfpCsLG00TYkBhZRWKHg5DfUojczCXx1eHPGH0HxWf7OhmHE_03zVsvsoL2LFnoOrFcQ4JfNL2ZavHBQSba47zMviEFjM9WBgMIl5leX6jyvL0HwoCpjDR2dD-ty4J9mKf3gD9FgR8NFsGvOBkmbCRdG8RcWMHvlTAtvCkX18cjAs1I7wnpYosBfjzLfrp_aU-GG4sv0"
+           alt="Experienced dentist at Teeth And Smile Gurugram" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+    <div class="gallery-item rounded-lg break-inside-avoid" data-category="treatment" onclick="openLightbox(11)">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-U-2i6XWDzJzFn3FkeCLGHkQwuY6ZXrGg4WP1i6UXvcCgrNmq-ggptlZRmtNlBUFQjp9tAMX0zxsGhSNDp8yED4FkoYV676B_kU-NSFk_wZhEazWIDjtC1Zet2-l1qEi_fG68ruDxc7-epmHNMn00MWHKQVUwZWy6264hs4qynACeas_ER_gYFwyH9-KI49NWkHHNaJ1yQGSzPgpVKvPOO2z1qppe-lDapw-Ay-H89NzIBbMdcqqaOfCVWrHBFR17kfX3AHuURdw"
+           alt="Specialist dental surgeon Gurugram" class="w-full rounded-lg"/>
+      <div class="overlay rounded-lg"><span class="material-symbols-outlined overlay-icon text-4xl">zoom_in</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEFORE & AFTER SECTION -->
+<section class="py-16 px-6 md:px-8 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-secondary font-bold tracking-widest uppercase text-xs mb-3 block">Real Patient Results</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-900 mb-3">Before &amp; After Transformations</h2>
+      <p class="text-on-surface-variant text-sm max-w-xl mx-auto">See the real difference that modern dentistry can make. These are actual results from our patients in Gurugram.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Before/After Card 1 -->
+      <div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="grid grid-cols-2 h-52">
+          <div class="relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCd3NCAKkwcZz7kx_spklmvUmsJcY0Yr_RIa0OpM1bXU9WdEZtHGEvFAArStiXjQQMXYba_ojlH6XTVqZmEGnPSMxngbGyEYG-073oVGLgSaUXdznmqliTjjuIgBhe9qKyrwy-4qhKGLQqaSv4kFU8bFLeMV_tv3gDJN3U-_Ht648Rqea9sOBNy9MWXukmAqXw0jcBjjIvJMlrpTmWdt0mzDOK87LGtqzRhyIhcUVkv7m2O_LCAZHOXNN22PGH69TzNbxbQwqU3y4"
+                 alt="Before teeth whitening" class="w-full h-full object-cover grayscale"/>
+            <span class="absolute bottom-2 left-2 bg-black/60 text-white text-xs font-bold px-2 py-0.5 rounded-full">BEFORE</span>
+          </div>
+          <div class="relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiIjlfgpZ2RLGNLqtQQAl79JH4ApVrKj2eDemnP2MGy6M0_LglTipWxO6UJuwvKpQFIM3WHBW_ymSmG-38NN9Arw66GKnl5EDz3v4I6oqM2eB_miQ48jxLn8wxL-VHBtUKFPFZ0w_RP_VWQhMhkS3_eBklAOXjaM3xJ2OEL9pNVozsFHISUaWPe5v2BQCj4wuNhDIhJ5L6iA7CcVOC8Azzt2_Bp3z3t2MVJBCvJpQbw9p-iXGeO3mHch7e3tLxJPnxILnxpso0AI0"
+                 alt="After teeth whitening bright smile" class="w-full h-full object-cover"/>
+            <span class="absolute bottom-2 right-2 bg-primary text-on-primary text-xs font-bold px-2 py-0.5 rounded-full">AFTER</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <h4 class="font-bold text-teal-900 text-sm mb-1">Teeth Whitening</h4>
+          <p class="text-xs text-on-surface-variant">8-shade brightening achieved in a single session using professional laser whitening.</p>
+        </div>
+      </div>
+      <!-- Before/After Card 2 -->
+      <div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="grid grid-cols-2 h-52">
+          <div class="relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwzF3FXTow0aEpg6Jto2LhiQi9tzThWo9u98txWjJkXGLgxFk4l5FvTY3WdnZfvTY2bK4R9i6LM4luHF6t_exVpsKwjfQJEpG4e6UxlQK4xl678FPJ50im0gmMUV6fB5kCaBydL2mVnp-V2PFR83cfA90CuTU9p1vneizmPIPl23zztxugIbD7ixjjS1FXB4MdavnHiVllMNLQ6UWMY8YlO28N4xE6ucTaHFWo3cmeaDJLOZIzcNNs1xmVrjnxqAsSIW_S7gNIGMg"
+                 alt="Before dental implant" class="w-full h-full object-cover grayscale"/>
+            <span class="absolute bottom-2 left-2 bg-black/60 text-white text-xs font-bold px-2 py-0.5 rounded-full">BEFORE</span>
+          </div>
+          <div class="relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpv06qb3tVTfNT2tFPg5S_YPpPdquljjsQoUO8kM3cv_QNrV6XvkXHFNQycEZCfF0Qnsp3x-uH5sR5FbRYjh8rj-j6Cm1VxrKrwYc7T9OyxxZoxo5_dR2dNtFnu6o2tmfc2hp_LonUE3ZSCnMvsp5fH0bSaDkJxFKHcSHxwkpAmnHRvuPmuzq71rW2GH3U_I4-cq-p9r5xzjSAoihMADVNozBpdGUu3WaH0VT72tJ5SYkkLL3-tIWfL4vbOiFCD0GXci1iw5tmJjc"
+                 alt="After dental implant result" class="w-full h-full object-cover"/>
+            <span class="absolute bottom-2 right-2 bg-primary text-on-primary text-xs font-bold px-2 py-0.5 rounded-full">AFTER</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <h4 class="font-bold text-teal-900 text-sm mb-1">Dental Implant</h4>
+          <p class="text-xs text-on-surface-variant">Full-arch implant restoration — patient regained complete chewing function and confidence.</p>
+        </div>
+      </div>
+      <!-- Before/After Card 3 -->
+      <div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="grid grid-cols-2 h-52">
+          <div class="relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6qs-F1tRF0BXeHDL6lHQ4puD1zbNOfKudy3fX8ePiqU9oOJ2EYpnznL0eGRbCHSv4z58MnfYXc0vnGETroutCRlhHF5oGq68dRHS4FCEGHBdAAriaJWh-GCM6tMVg8JcXeVXFokwhVZCYRlo3oT_6_fHRhk0GacftyOp3J4TCxWKKMppDvcIIiF0m5PVszLKAeM70WvSJBb8u4"
+                 alt="Before braces aligners" class="w-full h-full object-cover grayscale"/>
+            <span class="absolute bottom-2 left-2 bg-black/60 text-white text-xs font-bold px-2 py-0.5 rounded-full">BEFORE</span>
+          </div>
+          <div class="relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT2hm11ZVfII8O8b3BccVG40Eylf2TqemvevUG-_Jxb1coayjy1ecDIZGQJU8Xwiavq4ZWyXwfl5QLmkYfpdNO10DKGD4TC8Q8zx_8rrsgD8_ApDcRcr0X4GnFt7RZPuhv88m09bGF9qUNeaMjCcII6NJ7pgOAqUP4FLxkzQ3of13e0R9ngthQVWji9M7i-8TT0ZIvwladCbP4rp2hsPJJBDcQNmTOdMrA0HRC6VQ8iuvfGqvhi3Q2M7wXIp0jWb1KRiUseSUweFU"
+                 alt="After smile makeover transformation" class="w-full h-full object-cover"/>
+            <span class="absolute bottom-2 right-2 bg-primary text-on-primary text-xs font-bold px-2 py-0.5 rounded-full">AFTER</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <h4 class="font-bold text-teal-900 text-sm mb-1">Smile Makeover</h4>
+          <p class="text-xs text-on-surface-variant">Complete smile transformation using veneers, whitening, and gum contouring.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-gradient-to-br from-primary to-primary-container text-on-primary">
+  <div class="max-w-3xl mx-auto px-6 md:px-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Your Transformation Starts Today</h2>
+    <p class="opacity-90 text-sm leading-relaxed mb-8 max-w-lg mx-auto">See yourself in our gallery. Book a consultation at Teeth And Smile Dental Clinic &amp; Implant Centre, Sector 57, Gurugram.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="contact.html" class="bg-on-primary text-primary px-8 py-4 rounded-full font-bold text-sm shadow-lg hover:scale-105 transition-transform">Book Appointment</a>
+      <a href="https://wa.me/917015937576?text=Hi%2C%20I%20saw%20the%20gallery%20and%20want%20to%20book%20a%20consultation" target="_blank" class="flex items-center gap-2 bg-green-400 text-white px-8 py-4 rounded-full font-bold text-sm hover:scale-105 transition-transform">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightboxOnOverlay(event)">
+  <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button id="lightbox-prev" onclick="changeImage(-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+  <img id="lightbox-img" src="" alt="Gallery image"/>
+  <button id="lightbox-next" onclick="changeImage(1)"><span class="material-symbols-outlined">chevron_right</span></button>
+  <div id="lightbox-caption"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-slate-100 w-full pt-14 pb-24 md:pb-8">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 md:px-8 max-w-7xl mx-auto">
+    <div class="space-y-3">
+      <div class="text-lg font-bold text-teal-800" style="font-family:Manrope,sans-serif">Teeth And Smile</div>
+      <div class="text-xs font-semibold text-teal-700 uppercase tracking-wider">Dental Clinic &amp; Implant Centre</div>
+      <p class="text-slate-500 text-sm leading-relaxed">Premium dental care in Sushant Lok 2, Sector 57, Gurugram.</p>
+    </div>
+    <div class="space-y-3">
+      <h4 class="font-bold text-teal-900 text-sm uppercase tracking-wider">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-slate-500">
+        <li><a href="index.html" class="hover:text-teal-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-teal-600">About Us</a></li>
+        <li><a href="services.html" class="hover:text-teal-600">Services</a></li>
+        <li><a href="gallery.html" class="hover:text-teal-600">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-teal-600">Contact</a></li>
+      </ul>
+    </div>
+    <div class="space-y-3">
+      <h4 class="font-bold text-teal-900 text-sm uppercase tracking-wider">Contact</h4>
+      <ul class="space-y-2 text-sm text-slate-500">
+        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span><a href="tel:+917015937576" class="hover:text-teal-600">7015937576</a></li>
+        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-sm text-primary">location_on</span><span>2025, Basement, Block G, Sushant Lok 2, Sector 57, Gurugram 122011</span></li>
+        <li class="flex items-start gap-2"><span class="material-symbols-outlined text-sm text-primary">schedule</span><span>Mon–Sun: 10:00 AM – 8:00 PM</span></li>
+      </ul>
+    </div>
+    <div class="space-y-3">
+      <h4 class="font-bold text-teal-900 text-sm uppercase tracking-wider">Services</h4>
+      <ul class="space-y-2 text-sm text-slate-500">
+        <li><a href="services.html#implants" class="hover:text-teal-600">Dental Implants</a></li>
+        <li><a href="services.html#rct" class="hover:text-teal-600">Root Canal Treatment</a></li>
+        <li><a href="services.html#whitening" class="hover:text-teal-600">Teeth Whitening</a></li>
+        <li><a href="services.html#braces" class="hover:text-teal-600">Braces &amp; Aligners</a></li>
+        <li><a href="services.html#makeover" class="hover:text-teal-600">Smile Makeover</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 md:px-8 mt-10 pt-6 border-t border-slate-200">
+    <p class="text-slate-400 text-xs">© 2025 Teeth And Smile Dental Clinic &amp; Implant Centre. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/917015937576?text=Hi%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment" target="_blank"
+   class="whatsapp-float w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-xl">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-xl md:hidden rounded-t-[2rem] shadow-[0_-8px_24px_rgba(25,28,30,0.08)] border-t border-teal-100/30">
+  <div class="flex justify-around items-center h-16 px-4">
+    <a href="https://wa.me/917015937576" target="_blank" class="flex flex-col items-center gap-0.5 px-5 py-2">
+      <span class="material-symbols-outlined text-teal-700">chat</span>
+      <span class="text-[10px] font-medium text-teal-700">WhatsApp</span>
+    </a>
+    <a href="contact.html" class="flex flex-col items-center gap-0.5 px-5 py-2 bg-teal-50 rounded-xl">
+      <span class="material-symbols-outlined text-teal-700">calendar_month</span>
+      <span class="text-[10px] font-medium text-teal-700">Book</span>
+    </a>
+    <a href="tel:+917015937576" class="flex flex-col items-center gap-0.5 px-5 py-2">
+      <span class="material-symbols-outlined text-teal-700">call</span>
+      <span class="text-[10px] font-medium text-teal-700">Call Now</span>
+    </a>
+  </div>
+</nav>
+
+<script>
+  // Mobile menu
+  function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+
+  // Gallery images array (src, alt, caption)
+  const images = [
+    { src: document.querySelectorAll('.gallery-item img')[0]?.src, caption: 'Dental Clinic Reception' },
+    { src: document.querySelectorAll('.gallery-item img')[1]?.src, caption: 'Modern Treatment Room' },
+    { src: document.querySelectorAll('.gallery-item img')[2]?.src, caption: 'Specialist at Work' },
+    { src: document.querySelectorAll('.gallery-item img')[3]?.src, caption: 'Teeth Whitening Results' },
+    { src: document.querySelectorAll('.gallery-item img')[4]?.src, caption: 'Dental Implant Model' },
+    { src: document.querySelectorAll('.gallery-item img')[5]?.src, caption: 'Clinic Interior' },
+    { src: document.querySelectorAll('.gallery-item img')[6]?.src, caption: 'Root Canal Treatment' },
+    { src: document.querySelectorAll('.gallery-item img')[7]?.src, caption: 'Smile Makeover Result' },
+    { src: document.querySelectorAll('.gallery-item img')[8]?.src, caption: 'Dental Suite, Sector 57 Gurugram' },
+    { src: document.querySelectorAll('.gallery-item img')[9]?.src, caption: 'Aligner Transformation' },
+    { src: document.querySelectorAll('.gallery-item img')[10]?.src, caption: 'Expert Dental Team' },
+    { src: document.querySelectorAll('.gallery-item img')[11]?.src, caption: 'Dental Specialist' }
+  ];
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const lb = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    const cap = document.getElementById('lightbox-caption');
+    // Get src from gallery items
+    const items = document.querySelectorAll('.gallery-item img');
+    img.src = items[index]?.src || '';
+    img.alt = items[index]?.alt || '';
+    cap.textContent = images[index]?.caption || '';
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function closeLightboxOnOverlay(e) {
+    if (e.target === document.getElementById('lightbox')) closeLightbox();
+  }
+
+  function changeImage(dir) {
+    const items = document.querySelectorAll('.gallery-item:not([style*="display: none"]) img');
+    const visibleItems = Array.from(document.querySelectorAll('.gallery-item:not([style*="display: none"])'));
+    const allItems = Array.from(document.querySelectorAll('.gallery-item img'));
+    const currentSrc = document.getElementById('lightbox-img').src;
+    let newIndex = (currentIndex + dir + allItems.length) % allItems.length;
+    currentIndex = newIndex;
+    document.getElementById('lightbox-img').src = allItems[newIndex]?.src || '';
+    document.getElementById('lightbox-caption').textContent = images[newIndex]?.caption || '';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (document.getElementById('lightbox').classList.contains('active')) {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') changeImage(1);
+      if (e.key === 'ArrowLeft') changeImage(-1);
+    }
+  });
+
+  // Gallery filter
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('bg-primary','text-on-primary');
+      b.classList.add('bg-surface-container','text-on-surface-variant');
+    });
+    btn.classList.remove('bg-surface-container','text-on-surface-variant');
+    btn.classList.add('bg-primary','text-on-primary');
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      if (cat === 'all' || item.dataset.category === cat) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
+</body>
+</html>
